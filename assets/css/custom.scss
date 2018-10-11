@@ -1,0 +1,29 @@
+section {
+  &:nth-of-type(odd) {
+    background-color: #920000;
+  }
+
+  &:nth-of-type(even) {
+    background-color: #1b1b9e
+  }
+
+  padding: 10px;
+}
+
+html {
+  font-size: 1.2rem;
+  @media screen and  (max-width: 450px) {
+    font-size: 1.1rem;
+  }
+}
+
+.masthead {
+  .intro-body h1.brand-heading {
+    font-size: 90px;
+  }
+  background-image: url("../img/forest.jpg");
+
+  .btn-circle {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}

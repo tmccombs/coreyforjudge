@@ -1,0 +1,8 @@
+{{- with .Params.image -}}
+  <img class="img-fluid" src="{{ ((resources.Get .).Resize "600x").RelPermalink }}" />
+{{- end -}}
+{{- with .Params.title -}}
+  <h2>{{.}}</h2>
+{{- end -}}
+{{ .Content }}
+{{/* vim: set ft=gohtmltmpl : */}}

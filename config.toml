@@ -1,3 +1,13 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Corey Larson for District Court Judge"
+theme = "grayscale"
+relativeURLs = true
+
+[params]
+copyright = "Elect Corey Larson Judge (NP)"
+address = "PO Box 2781 Longview, WA 98632"
+phone = "(360) 218-1304"
+email = "coreyjames13@hotmail.com"
+
+

@@ -1,0 +1,10 @@
+<img
+  src="{{ (.Get "src" | resources.Get).RelPermalink }}"
+  class="img-fluid"
+  {{ with .Get "id" }}
+    id="{{.}}"
+  {{ end }}
+  {{ with .Get "alt" }}
+    alt="{{ . }}"
+  {{ end }}
+/>
