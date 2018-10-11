@@ -25,7 +25,7 @@
 
     <!-- Custom styles for this template -->
     <link href="{{ "css/grayscale.min.css" | relURL }}" rel="stylesheet">
-    {{ $style := resources.Get "css/custom.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
+    {{ $style := resources.Get "css/custom.scss" | resources.ToCSS (dict "outputStyle" "compressed" "targetPath" "css/style.css") }}
     <style>
       {{ $style.Content | safeCSS }}
     </style>
