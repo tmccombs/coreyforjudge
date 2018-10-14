@@ -12,6 +12,13 @@
     {{- if isset .Site.Params "googlesiteverification" -}}<meta name="google-site-verification" content="{{ .Site.Params.googleSiteVerification }}">{{- end -}}
     {{- if isset .Site.Params "msvalidate" -}}<meta name="msvalidate.01" content="{{ .Site.Params.msValidate }}">{{- end -}}
 
+
+    <meta property="og:title" content="{{ $.Param "title" }}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="{{ $.Param "thumb_image" }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+
     <!-- Site Generator -->
     <meta name="generator" content="Hugo {{ .Hugo.Version }}">
 
